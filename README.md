@@ -1,5 +1,10 @@
 # Clinical Trial Intelligence Agent
 
+
+![Architecture Infographic](docs/images/infographic.jpg)
+
+*Source: [clinical-trial-intelligence-agent](https://github.com/ajones1923/clinical-trial-intelligence-agent)*
+
 RAG-powered clinical trial decision support agent for the HCLS AI Factory platform. Provides AI-driven protocol optimization, patient-trial matching, site selection, eligibility optimization, adaptive design evaluation, safety signal detection, regulatory document generation, competitive intelligence, diversity assessment, and decentralized trial planning.
 
 ## Architecture
