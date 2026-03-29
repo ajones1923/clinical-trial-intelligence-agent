@@ -19,20 +19,16 @@ Date: March 2026
 from __future__ import annotations
 
 import io
-import json
 import logging
 import uuid
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Union
 
 from .models import (
     CompetitorProfile,
-    EvidenceLevel,
     OverallMatch,
     SafetySignal,
     SeverityLevel,
-    TrialPhase,
-    TrialWorkflowType,
     WorkflowResult,
 )
 

@@ -11,7 +11,6 @@ Author: Adam Jones
 Date: March 2026
 """
 
-import pytest
 
 from src.models import (
     TrialWorkflowType,
@@ -20,7 +19,6 @@ from src.models import (
     SeverityLevel,
     TherapeuticArea,
     WorkflowResult,
-    TrialResponse,
 )
 from config.settings import TrialSettings
 from scripts.setup_collections import COLLECTION_SCHEMAS, get_collection_names

@@ -8,12 +8,10 @@ Author: Adam Jones
 Date: March 2026
 """
 
-import os
 import sys
 import threading
 from contextlib import asynccontextmanager
 from pathlib import Path
-from unittest.mock import patch
 
 import pytest
 

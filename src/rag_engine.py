@@ -31,16 +31,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, Generator, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 from config.settings import settings
 
 from .agent import (
     TRIAL_SYSTEM_PROMPT,
     WORKFLOW_COLLECTION_BOOST,
-    TRIAL_CONDITIONS,
-    TRIAL_BIOMARKERS,
-    TRIAL_DRUGS,
     TrialWorkflowType,
     TrialResponse,
 )
@@ -1201,7 +1198,7 @@ class TrialRAGEngine:
 
         # Factor 2: Collection diversity (0-0.3)
         unique_collections = len(set(r.collection for r in results))
-        total_collections = len(COLLECTION_CONFIG)
+        len(COLLECTION_CONFIG)
         diversity_score = min(unique_collections / 4, 1.0) * 0.3
 
         # Factor 3: Average score of top results (0-0.2)

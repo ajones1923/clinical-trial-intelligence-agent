@@ -14,10 +14,9 @@ import io
 import json
 import uuid
 from datetime import datetime, timezone
-from typing import Dict, List, Optional
+from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Request
-from fastapi.responses import JSONResponse, PlainTextResponse
 from loguru import logger
 from pydantic import BaseModel, Field
 
@@ -89,7 +88,7 @@ def _generate_markdown_header(title: str, trial_id: Optional[str] = None, patien
         f"# {title}",
         "",
         f"**Generated:** {now}",
-        f"**Agent:** Clinical Trial Intelligence Agent v1.0.0",
+        "**Agent:** Clinical Trial Intelligence Agent v1.0.0",
     ]
     if trial_id:
         lines.append(f"**Trial ID:** {trial_id}")
@@ -143,8 +142,8 @@ def _matching_report_markdown(data: dict) -> str:
     matches = data.get("matches", [])
 
     lines.extend([
-        f"## Patient-Trial Matching Results",
-        f"",
+        "## Patient-Trial Matching Results",
+        "",
         f"**Total Screened:** {data.get('total_screened', 'N/A')}",
         f"**Matches Found:** {len(matches)}",
         "",

@@ -19,27 +19,13 @@ import logging
 import math
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from src.models import (
-    CompetitorProfile,
     CriterionType,
     DCTComponent,
-    DocumentType,
-    EligibilityAnalysis,
-    EndpointType,
-    EvidenceLevel,
     MatchScore,
-    OverallMatch,
-    PatientProfile,
-    ProtocolComplexity,
-    RegulatoryAgency,
-    SafetySignal,
     SeverityLevel,
-    SiteScore,
-    TherapeuticArea,
-    TrialPhase,
-    TrialStatus,
     TrialWorkflowType,
     WorkflowResult,
 )
@@ -1130,7 +1116,7 @@ class AdaptiveDesignWorkflow(BaseTrialWorkflow):
         # --- Safety assessment ---
         sae_count = safety.get("sae_count", 0)
         disc_rate = safety.get("discontinuation_rate", 0)
-        dose_mods = safety.get("dose_modifications", 0)
+        safety.get("dose_modifications", 0)
 
         if sae_count > 0:
             sae_rate = sae_count / max(enrolled, 1)
@@ -1718,7 +1704,7 @@ class RegulatoryDocumentWorkflow(BaseTrialWorkflow):
 
         # Trial-specific population
         if trial:
-            findings.append(f"\nTrial context:")
+            findings.append("\nTrial context:")
             if trial.get("title"):
                 findings.append(f"  Title: {trial['title']}")
             if trial.get("nct_id"):
@@ -1749,7 +1735,7 @@ class RegulatoryDocumentWorkflow(BaseTrialWorkflow):
             )
 
         references = [
-            f"ICH M4 Common Technical Document (eCTD)",
+            "ICH M4 Common Technical Document (eCTD)",
         ]
         if doc_type == "csr":
             references.append("ICH E3 Structure and Content of Clinical Study Reports")
@@ -2296,7 +2282,7 @@ class DecentralizedPlanningWorkflow(BaseTrialWorkflow):
 
     def preprocess(self, inputs: dict) -> dict:
         inp = dict(inputs)
-        warnings = self._init_warnings(inp)
+        self._init_warnings(inp)
 
         inp.setdefault("protocol", {})
         inp.setdefault("dct_requirements", {})

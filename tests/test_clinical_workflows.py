@@ -16,12 +16,10 @@ from src.models import (
     OverallMatch,
     TrialPhase,
     TrialStatus,
-    PatientProfile,
     EligibilityAnalysis,
     SiteScore,
     SafetySignal,
     CompetitorProfile,
-    ProtocolComplexity,
 )
 
 

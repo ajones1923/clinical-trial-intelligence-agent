@@ -4,7 +4,6 @@ Follows the same Pydantic BaseSettings pattern as the Cardiology agent.
 """
 
 import logging
-import os
 from pathlib import Path
 from typing import List, Optional
 

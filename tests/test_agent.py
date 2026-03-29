@@ -10,11 +10,8 @@ from src.models import (
     TrialWorkflowType,
     TrialQuery,
     TrialResponse,
-    WorkflowResult,
     PatientProfile,
     SearchPlan,
-    SeverityLevel,
-    TherapeuticArea,
 )
 
 

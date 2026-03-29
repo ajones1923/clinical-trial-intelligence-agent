@@ -16,7 +16,7 @@ Date: March 2026
 
 import pytest
 
-from src.ingest.base import BaseIngestParser, IngestRecord, IngestStats
+from src.ingest.base import IngestRecord, IngestStats
 from src.ingest.clinicaltrials_parser import ClinicalTrialsParser, LANDMARK_TRIALS
 from src.ingest.pubmed_parser import PubMedTrialParser, TRIAL_MESH_TERMS
 from src.ingest.regulatory_parser import RegulatoryParser, REGULATORY_MILESTONES

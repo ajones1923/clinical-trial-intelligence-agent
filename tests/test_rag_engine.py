@@ -10,7 +10,6 @@ Author: Adam Jones
 Date: March 2026
 """
 
-import pytest
 
 from src.models import (
     TrialQuery,
@@ -18,10 +17,8 @@ from src.models import (
     TrialResponse,
     WorkflowResult,
     TrialWorkflowType,
-    SeverityLevel,
     SearchPlan,
 )
-from src.ingest.base import BaseIngestParser, IngestRecord
 
 
 class TestRAGSearchResultCreation:

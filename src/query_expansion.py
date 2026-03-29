@@ -149,10 +149,7 @@ ENTITY_ALIASES: Dict[str, str] = {
     "RP2D": "recommended phase 2 dose",
     "MTD": "maximum tolerated dose",
     "DLT": "dose-limiting toxicity",
-    # --- Disease abbreviations (expanded) ---
-    "GBM": "glioblastoma multiforme",
     "PDAC": "pancreatic ductal adenocarcinoma",
-    "IPF": "idiopathic pulmonary fibrosis",
     "MAFLD": "metabolic dysfunction-associated fatty liver disease",
     "PNH": "paroxysmal nocturnal hemoglobinuria",
     "C3G": "C3 glomerulopathy",

@@ -12,13 +12,11 @@ from __future__ import annotations
 
 import logging
 import math
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from src.models import (
     EligibilityAnalysis,
-    EvidenceLevel,
     ProtocolComplexity,
-    SeverityLevel,
 )
 
 logger = logging.getLogger(__name__)

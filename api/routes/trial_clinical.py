@@ -10,7 +10,7 @@ Author: Adam Jones
 Date: March 2026
 """
 
-from typing import Dict, List, Optional
+from typing import List, Optional
 
 from fastapi import APIRouter, HTTPException, Request
 from loguru import logger
@@ -20,12 +20,6 @@ from src.models import (
     TrialWorkflowType,
     TrialPhase,
     TherapeuticArea,
-    CriterionType,
-    EndpointType,
-    RegulatoryAgency,
-    DocumentType,
-    SeverityLevel,
-    DCTComponent,
 )
 
 router = APIRouter(prefix="/v1/trial", tags=["clinical-trials"])
