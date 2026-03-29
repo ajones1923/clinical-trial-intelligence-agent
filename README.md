@@ -134,3 +134,7 @@ See the auto-generated OpenAPI docs at `http://localhost:8538/docs` when the ser
 ## Author
 
 Adam Jones -- HCLS AI Factory, March 2026
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
